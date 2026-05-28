@@ -1,0 +1,47 @@
+<!-- templates/partials/tab_cache.html -->
+<div class="sec-hdr">
+  <div class="sec-ttl">JDE Clear Cache</div>
+  <button id="cache-config-btn" class="btn btn-primary" onclick="openCacheConfig()" style="display:none">
+    <i class="ti ti-settings"></i> Configuration
+  </button>
+</div>
+
+<!-- Cache Grid -->
+<div class="cache-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px;margin-top:16px">
+  <div class="cache-card" style="background:var(--bg-2);border:0.5px solid var(--border);border-radius:8px;padding:16px;text-align:center">
+    <div class="cache-card-icon" style="font-size:24px;font-weight:600;color:var(--blue);margin-bottom:8px">DV920</div>
+    <div class="cache-card-title" style="font-weight:600;margin-bottom:4px">Development</div>
+    <div class="cache-card-desc" style="font-size:12px;color:var(--text-3);margin-bottom:12px">Clear database & data caches</div>
+    <button class="btn-cache" id="cache-btn-DV920" style="width:100%;background:var(--red);color:white;padding:8px;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:6px" onclick="askClearCache('DV920')">
+      <i class="ti ti-trash"></i> Clear Cache
+    </button>
+    <div class="cache-result" id="cache-result-DV920" style="margin-top:8px"></div>
+  </div>
+
+  <div class="cache-card" style="background:var(--bg-2);border:0.5px solid var(--border);border-radius:8px;padding:16px;text-align:center">
+    <div class="cache-card-icon" style="font-size:24px;font-weight:600;color:var(--amber);margin-bottom:8px">PY920</div>
+    <div class="cache-card-title" style="font-weight:600;margin-bottom:4px">Pre-Production</div>
+    <div class="cache-card-desc" style="font-size:12px;color:var(--text-3);margin-bottom:12px">Clear database & data caches</div>
+    <button class="btn-cache" id="cache-btn-PY920" style="width:100%;background:var(--red);color:white;padding:8px;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:6px" onclick="askClearCache('PY920')">
+      <i class="ti ti-trash"></i> Clear Cache
+    </button>
+    <div class="cache-result" id="cache-result-PY920" style="margin-top:8px"></div>
+  </div>
+
+  <div class="cache-card" style="background:var(--bg-2);border:0.5px solid var(--border);border-radius:8px;padding:16px;text-align:center">
+    <div class="cache-card-icon" style="font-size:24px;font-weight:600;color:var(--green);margin-bottom:8px">DM920</div>
+    <div class="cache-card-title" style="font-weight:600;margin-bottom:4px">Demo</div>
+    <div class="cache-card-desc" style="font-size:12px;color:var(--text-3);margin-bottom:12px">Clear database & data caches</div>
+    <button class="btn-cache" id="cache-btn-DM920" style="width:100%;background:var(--red);color:white;padding:8px;border:none;border-radius:4px;cursor:pointer;font-size:12px;font-weight:500;display:flex;align-items:center;justify-content:center;gap:6px" onclick="askClearCache('DM920')">
+      <i class="ti ti-trash"></i> Clear Cache
+    </button>
+    <div class="cache-result" id="cache-result-DM920" style="margin-top:8px"></div>
+  </div>
+</div>
+
+<!-- Help text -->
+<div style="font-size:11px;color:var(--text-3);margin-top:24px;padding:12px;background:var(--bg-2);border-radius:6px;border-left:3px solid var(--amber);">
+  <i class="ti ti-alert-circle" style="margin-right:4px;color:var(--amber);"></i>
+  <strong>Warning:</strong> Clearing cache will temporarily affect all JDE instances in the selected environment. 
+  This operation will clear both database caches (JDBJ) and data caches (AIS) across all configured instances.
+</div>

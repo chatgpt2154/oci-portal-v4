@@ -1,0 +1,151 @@
+19:59:39 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+19:59:43 INFO  [main        ] Starting OCI Portal [development]
+19:59:43 INFO  [main        ] Database tables ready
+20:00:39 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:00:39 INFO  [auth        ] Login success: admin role=Role.admin
+20:03:03 INFO  [users       ] user=admin action=CREATE_USER resource=test-operator ip=127.0.0.1
+20:03:03 INFO  [users       ] User 'test-operator' created by admin
+20:03:20 INFO  [auth        ] user=test-operator action=LOGIN ip=127.0.0.1
+20:03:20 INFO  [auth        ] Login success: test-operator role=Role.operator
+20:04:00 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:04:00 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:04:00 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:04:00 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:04:00 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:04:00 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:04:00 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:01 INFO  [instances   ] instance_action ActionType.START on ocid1.instance.oc1.ap-sydney-1.anzxsljrn4g47ciciffyobj4rlcpa63guhwqxugct2hpbk55v7pueuxm6s4q region=ap-sydney-1 by test-operator
+20:05:01 INFO  [instances   ] user=test-operator action=START resource=ndevrent01 region=ap-sydney-1 ip=127.0.0.1
+20:05:06 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:06 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:06 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:06 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:06 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:06 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:06 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:13 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:13 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:13 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:13 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:13 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:13 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:13 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:19 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:19 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:19 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:19 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:19 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:19 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:19 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:26 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:26 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:26 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:26 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:26 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:26 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:26 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:32 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:32 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:32 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:32 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:32 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:32 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:32 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:39 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:39 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:39 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:39 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:39 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:39 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:39 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:45 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:05:45 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:45 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:45 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:45 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:45 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:05:45 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:06 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:07:06 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:06 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:06 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:06 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:06 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:06 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+20:07:27 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+20:07:41 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:07:41 INFO  [auth        ] Login success: admin role=Role.admin
+20:08:07 INFO  [instances   ] instance_action ActionType.STOP on ocid1.instance.oc1.ap-sydney-1.anzxsljrn4g47ciciffyobj4rlcpa63guhwqxugct2hpbk55v7pueuxm6s4q region=ap-sydney-1 by admin
+20:08:07 INFO  [instances   ] user=admin action=STOP resource=ndevrent01 region=ap-sydney-1 ip=127.0.0.1
+20:28:31 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:28:31 INFO  [auth        ] Login success: admin role=Role.admin
+20:28:53 INFO  [main        ] OCI Portal shut down
+20:29:01 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+20:29:02 INFO  [main        ] Starting OCI Portal [development]
+20:29:02 INFO  [main        ] Database tables ready
+20:29:50 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:29:50 INFO  [auth        ] Login success: admin role=Role.admin
+20:33:18 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:33:18 INFO  [auth        ] Login success: admin role=Role.admin
+20:33:31 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:33:31 INFO  [auth        ] Login success: admin role=Role.admin
+20:36:31 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:36:31 INFO  [auth        ] Login success: admin role=Role.admin
+20:49:00 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+20:49:00 INFO  [auth        ] Login success: admin role=Role.admin
+21:07:23 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+21:07:23 INFO  [auth        ] Login success: admin role=Role.admin
+21:36:40 INFO  [auth        ] user=test-operator action=LOGIN ip=127.0.0.1
+21:36:40 INFO  [auth        ] Login success: test-operator role=Role.operator
+21:37:10 INFO  [main        ] OCI Portal shut down
+21:37:39 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+21:37:51 INFO  [main        ] Starting OCI Portal [development]
+21:37:51 INFO  [main        ] Database tables ready
+21:59:29 INFO  [auth        ] user=test-operator action=LOGIN ip=127.0.0.1
+21:59:29 INFO  [auth        ] Login success: test-operator role=Role.operator
+22:03:34 INFO  [auth        ] user=test-operator action=LOGIN ip=127.0.0.1
+22:03:34 INFO  [auth        ] Login success: test-operator role=Role.operator
+22:06:05 INFO  [auth        ] user=test-operator action=LOGIN ip=127.0.0.1
+22:06:05 INFO  [auth        ] Login success: test-operator role=Role.operator
+10:04:57 WARNING [auth        ] Failed login: 'admin' from 127.0.0.1
+10:05:05 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+10:05:05 INFO  [auth        ] Login success: admin role=Role.admin
+10:05:45 INFO  [auth        ] user=test-operator action=LOGIN ip=127.0.0.1
+10:05:45 INFO  [auth        ] Login success: test-operator role=Role.operator
+10:05:57 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+10:05:57 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:05:57 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:05:57 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:05:57 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:05:57 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:05:57 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:06:29 DEBUG [instances   ] list_instances tag_filters for test-operator: [{'namespace': None, 'key': 'portal', 'value': 'true'}]
+10:06:29 DEBUG [instances   ] Instance ndevrclt01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:06:29 DEBUG [instances   ] Instance ndevrdep01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:06:29 DEBUG [instances   ] Instance ndevrmob01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:06:29 DEBUG [instances   ] Instance ndevrmob02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:06:29 DEBUG [instances   ] Instance ndevrsm01 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:06:29 DEBUG [instances   ] Instance ndevrsm02 excluded by tag filter (freeform={}, defined=['Schedule', 'Oracle-Tags'])
+10:08:31 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+10:08:31 INFO  [auth        ] Login success: admin role=Role.admin
+13:18:08 INFO  [main        ] OCI Portal shut down
+14:29:07 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+14:29:11 INFO  [main        ] Starting OCI Portal [development]
+14:29:11 INFO  [main        ] Database tables ready
+14:29:13 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+14:29:13 INFO  [main        ] Starting OCI Portal [development]
+14:29:13 INFO  [main        ] Database tables ready
+14:29:15 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+14:29:15 INFO  [main        ] Starting OCI Portal [development]
+14:29:15 INFO  [main        ] Database tables ready
+14:29:51 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+14:29:51 INFO  [auth        ] Login success: admin role=Role.admin
+14:30:11 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+14:30:11 INFO  [auth        ] Login success: admin role=Role.admin
+14:47:25 INFO  [main        ] OCI Portal shut down
+14:47:30 INFO  [oci_client  ] OCI auth: ConfigFile (~/.oci/config)
+14:47:31 INFO  [main        ] Starting OCI Portal [development]
+14:47:31 INFO  [main        ] Database tables ready
+14:47:49 INFO  [auth        ] user=admin action=LOGIN ip=127.0.0.1
+14:47:49 INFO  [auth        ] Login success: admin role=Role.admin
+15:34:11 INFO  [main        ] OCI Portal shut down
