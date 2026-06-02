@@ -4,12 +4,17 @@ JDE Cache Management Router
 Provides endpoints for clearing JDE database and data caches
 """
 import requests as req
-from typing import List, Dict, Any, Optional
+from typing import List, Dict, Any
 
 from fastapi import APIRouter, Depends, HTTPException, Request, status
 from sqlalchemy.ext.asyncio import AsyncSession
 
-from core.cache_config import CACHE_API_BASE, CACHE_API_USER, CACHE_API_PASS, get_cache_config
+from core.cache_config import (
+    get_cache_api_base, 
+    get_cache_api_user, 
+    get_cache_api_password, 
+    get_cache_config
+)
 from core.logging_setup import app_logger, audit_logger
 from db.database import get_db
 from db.models import AuditLog, User
@@ -37,9 +42,13 @@ async def get_cache_api_token() -> str:
         CacheAPIError: If authentication fails
     """
     try:
+        cache_api_base = get_cache_api_base()
+        cache_api_user = get_cache_api_user()
+        cache_api_pass = get_cache_api_password()
+        
         response = req.post(
-            f"{CACHE_API_BASE}/authenticate",
-            json={"username": CACHE_API_USER, "password": CACHE_API_PASS},
+            f"{cache_api_base}/authenticate",
+            json={"username": cache_api_user, "password": cache_api_pass},
             timeout=10,
         )
         response.raise_for_status()
@@ -74,6 +83,7 @@ async def call_cache_api(cache_name: str) -> List[Dict[str, Any]]:
         CacheAPIError: If any cache operation fails
     """
     config = get_cache_config(cache_name)
+    cache_api_base = get_cache_api_base()
     
     # Step 1 — authenticate and get token
     token = await get_cache_api_token()
@@ -86,7 +96,7 @@ async def call_cache_api(cache_name: str) -> List[Dict[str, Any]]:
     results = []
     for endpoint in config:
         try:
-            url = f"{CACHE_API_BASE}{endpoint['path']}"
+            url = f"{cache_api_base}{endpoint['path']}"
             app_logger.debug(f"Calling cache endpoint: {url}")
             
             response = req.delete(
