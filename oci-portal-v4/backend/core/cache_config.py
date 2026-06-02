@@ -3,13 +3,9 @@
 JDE Cache Management Configuration
 Defines cache endpoints for each JDE environment (DV920, PY920, DM920)
 """
-import os
 from typing import Dict, List, Any
+from core.config import settings
 
-# Cache API credentials (read from environment)
-CACHE_API_BASE = os.environ.get("CACHE_API_BASE", "http://JDESMC/manage/mgmtrestservice").rstrip("/")
-CACHE_API_USER = os.environ.get("CACHE_API_USER", "jde_admin")
-CACHE_API_PASS = os.environ.get("CACHE_API_PASSWORD", "jde_admin")
 
 # Per-cache config: each entry lists the individual cache endpoints to call
 # All calls within one entry share a single auth token obtained at the start
@@ -63,6 +59,21 @@ CACHE_CONFIG: Dict[str, List[Dict[str, Any]]] = {
         },
     ],
 }
+
+
+def get_cache_api_base() -> str:
+    """Get cache API base URL from settings"""
+    return settings.CACHE_API_BASE.rstrip("/")
+
+
+def get_cache_api_user() -> str:
+    """Get cache API username from settings"""
+    return settings.CACHE_API_USER
+
+
+def get_cache_api_password() -> str:
+    """Get cache API password from settings"""
+    return settings.CACHE_API_PASSWORD
 
 
 def get_cache_config(cache_name: str) -> List[Dict[str, Any]]:
