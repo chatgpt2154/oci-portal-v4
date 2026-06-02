@@ -14,7 +14,7 @@ from core.logging_setup import app_logger
 from db.database import engine, AsyncSessionLocal, Base
 from db.models import User
 from routers.auth import hash_password
-from routers import auth, users, instances, audit, debug
+from routers import auth, users, instances, audit, debug, cache
 
 BASE_DIR  = Path(__file__).parent
 templates = Jinja2Templates(directory=str(BASE_DIR / "templates"))
@@ -80,6 +80,7 @@ app.include_router(users.router)
 app.include_router(instances.router)
 app.include_router(audit.router)
 app.include_router(debug.router)
+app.include_router(cache.router)
 
 
 @app.get("/", response_class=HTMLResponse, include_in_schema=False)
