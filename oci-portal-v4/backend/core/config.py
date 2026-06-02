@@ -13,6 +13,11 @@ class Settings(BaseSettings):
     LOG_LEVEL:                str = "DEBUG"
     LOG_FILE:                 str = "debug.log"
     AUDIT_LOG_FILE:           str = "audit.log"
+    
+    # JDE Cache Management Configuration
+    CACHE_API_BASE:           str = "http://JDESMC/manage/mgmtrestservice"
+    CACHE_API_USER:           str = "jde_admin"
+    CACHE_API_PASSWORD:       str = "jde_admin"
 
     @property
     def origins_list(self) -> List[str]:
